@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <path
+        d="M12 15.5H7.5C6.10444 15.5 5.40665 15.5 4.83886 15.6722C3.56045 16.06 2.56004 17.0605 2.17224 18.3389C2 18.9067 2 19.6044 2 21M19 21V15M16 18H22M14.5 7.5C14.5 9.98528 12.4853 12 10 12C7.51472 12 5.5 9.98528 5.5 7.5C5.5 5.01472 7.51472 3 10 3C12.4853 3 14.5 5.01472 14.5 7.5Z"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    
+    <div class="main-container">
+      <div class="content-container">
+        <div class="shadow-effect">
+        <div class="input-container bottom-radius">
+          <div class="flex">
+          <span class="icon-left"
+            ><i class="fa-solid fa-magnifying-glass"></i
+          ></span>
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Type a command or search"
+          />
+        </div>
+          <span class="command-icon-box">⌘/</span>
+        </div>
+        <div class="result-container hidden">
+          <div class="untitled-result-container hidden">
+           <div class = "pulse">
+            <span style="--i:1;"></span>
+            <span style="--i:2;"></span>
+            <span style="--i:3;"></span>
+            <span style="--i:4;"></span>
+            <span style="--i:5;"></span>
+            <span style="--i:6;"></span>
+          </div> 
+          <div class="untitled-content">
+            <div class="hashtag"><i class="fa-solid fa-hashtag"></i></div>
+           <div> No tags found</div>
+            <div class="second-line">
+"Untitled" did not match any tags currently used in projects. Please try again or <span class="link-text">create a new tag</span>.
+            </div>
+              <button>Clear search</button>
+          </div>
+        </div>     
+        <div class="info-box hidden">
+          <div class="row-data">
+            <div class="left-content">
+              <span><i class="fa-solid fa-hashtag"></i></span>
+              <span>Add tag</span>
+            </div>
+            <div class="command-icon-box">⌘T</div>
+          </div>
+          <div class="row-data">
+            <div class="left-content">
+              <span><i class="fa-solid fa-user-plus"></i></span>
+              <span>Assign to...</span>
+            </div>
+            <div class="command-icon-box">⌘A</div>
+          </div>
+          <div class="row-data">
+            <div class="left-content">
+              <span><i class="fa-brands fa-slack"></i></span>
+              <span>Send new message</span>
+            </div>
+            <div class="link-text">
+              <text> Sign in to Slack</text>
+              <div class="command-icon-box">⌘M</div>
+            </div>
+          </div>
+          <div class="row-data">
+            <div class="left-content">
+              <span><i class="fas fa-folder-plus"></i></span>
+              <span>Create new file</span>
+            </div>
+            <div class="command-icon-box">⌘N</div>
+          </div>
+          <div class="row-data">
+            <div class="left-content">
+              <span><i class="fas fa-file-medical"></i></span>
+              <span>Create new project</span>
+            </div>
+            <div class="command-icon-box">⌘⇧N</div>
+          </div>
+          <div class="row-data">
+            <div class="left-content">
+              <span><i class="fas fa-dice-d6"></i></span>
+              <span>Documentation</span>
+            </div>
+            <div class="command-icon-box">⌘?</div>
+          </div>
+        </div>
+        <div class="footer-box">
+          <div class="icon-box">
+            <div class="icon-wrapper">
+              <span><i class="fa-solid fa-hashtag"></i></span>
+            </div>
+            <span>tags</span>
+          </div>
+          <div class="icon-box">
+            <div class="icon-wrapper">
+              <span><i class="fa-solid fa-arrow-up"></i></span>
+            </div>
+            <div class="icon-wrapper">
+              <span><i class="fa-solid fa-arrow-down"></i></span>
+            </div>
+            <span>navigate</span>
+          </div>
+          <div class="icon-box">
+            <div class="icon-wrapper">
+              <span><i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+            <span>open</span>
+          </div>
+          <div class="icon-box">
+            <div class="icon-wrapper">
+            <div>esc</div> 
+            </div>
+            <span>close</span>
+          </div>
+          <div class="icon-box">
+            <div class="icon-wrapper">
+              <span><i class="fa-solid fa-arrow-left"></i></span>
+            </div>
+            <span>parent</span>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
